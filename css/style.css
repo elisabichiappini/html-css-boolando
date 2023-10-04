@@ -27,15 +27,58 @@ TIPOGRAFIA----
 COMMON--------
 --------------
 */
+.box-container {
+    padding: 50px 0;
+}
+.container-flex {
+    display: flex;
+    max-width: 1300px;
+    margin: 0 auto;
+    gap: 20px;
+    flex-wrap: wrap;
+}
 
+.card {
+    width: calc(( 100% - 40px ) / 3);
+}
+
+body {
+    font-family: 'Lucida Sans', Arial, sans-serif;
+}
+
+.photo {
+    width: 100%;
+}
 /*
 --------------
 DEBUG---------
 --------------
 */
 
+.debug .box-container {
+    background-color: aquamarine;
+}
+
+.debug .container {
+    background-color: rgb(155, 155, 218);
+    border: 2px dashed white;
+}
+
+.debug .card {
+    background-color: bisque;
+    border: 2px dashed rgb(146, 78, 89);
+}
+
+.debug div.photo {
+    background-color: blueviolet;
+    height: 650px;
+}
 /*
 --------------
 MAIN----------
 --------------
 */
+
+.card div.photo img{
+    width: 100%;
+}
