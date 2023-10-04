@@ -46,10 +46,7 @@ COMMON--------
     flex-wrap: wrap;
 }
 
-.card {
-    width: calc(( 100% - 40px ) / 3);
-    position: relative;
-}
+
 
 h2 {
     font-size: 18px;
@@ -95,16 +92,6 @@ i {
     top: 10px;
 }
 
-.details {
-    position: absolute;
-    bottom: 100px;
-    color: white;
-}
-
-.info{
-    margin-top: 10px;
-}
-
 .info > span {
     font-size: 14px;
 }
@@ -141,8 +128,40 @@ DEBUG---------
 MAIN----------
 --------------
 */
+.card {
+    width: calc(( 100% - 40px ) / 3);
+    position: relative;
+}
 
-.card div.photo img {
+.details {
+    position: absolute;
+    bottom: 100px;
+    color: white;
+}
+
+.info{
+    margin-top: 10px;
+    width: 100%;
+    position: static;
+}
+
+.photo-2 {
     width: 100%;
     display: block;
+}
+
+.photo-1 {
+    width: 100%;
+    display: block;
+    position: absolute;
+    top: 0;
+    opacity: 0%;
+}
+
+img.photo-1:hover {
+    opacity: 100%;
+}
+
+.heart:hover {
+    color: var(--bg-sale);
 }
