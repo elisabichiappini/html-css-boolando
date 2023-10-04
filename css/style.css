@@ -64,7 +64,6 @@ DEBUG---------
 .debug .card {
     background-color: bisque;
     border: 2px dashed rgb(146, 78, 89);
-    height: 650px;
 }
 
 .debug div.photo {
