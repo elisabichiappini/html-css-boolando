@@ -46,6 +46,25 @@ body {
     font-family: 'Lucida Sans', Arial, sans-serif;
 }
 
+h2 {
+    font-size: 18px;
+    line-height: 24px;
+}
+
+h3 {
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: lighter;
+}
+
+.saletext {
+    color: red;
+    font-weight: 700;
+}
+
+.price {
+    text-decoration: line-through;
+}
 /*
 --------------
 DEBUG---------
