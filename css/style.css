@@ -16,6 +16,9 @@ VARIABILI-----
 --------------
 */
 
+:root {
+    --bg-sale: red; 
+}
 /*
 --------------
 TIPOGRAFIA----
@@ -34,6 +37,7 @@ COMMON--------
 .box-container {
     padding: 50px 0;
 }
+
 .container-flex {
     display: flex;
     max-width: 1300px;
@@ -58,17 +62,14 @@ h3 {
     font-weight: lighter;
 }
 
-.saletext {
-    color: red;
+.sale {
+    color: var(--bg-sale);   
     font-weight: 700;
-}
-
-.price {
     text-decoration: line-through;
 }
 
 i {
-padding: 12px;
+    padding: 12px;
     display: inline-block;
     font-size: 24px;
     background-color: rgb(255, 255, 255);
@@ -77,7 +78,7 @@ padding: 12px;
 }
 
 .discount {
-    background-color: red;
+    background-color: var(--bg-sale);
     display: inline-block;
     padding: 5px;
 }
@@ -86,10 +87,6 @@ padding: 12px;
     background-color: rgb(91, 163, 36);
     display: inline-block;
     padding: 5px;
-}
-
-.details {
-    color: white;
 }
 
 .heart {
@@ -101,8 +98,16 @@ padding: 12px;
 .details {
     position: absolute;
     bottom: 100px;
+    color: white;
 }
 
+.info{
+    margin-top: 10px;
+}
+
+.info > span {
+    font-size: 14px;
+}
 /*
 --------------
 DEBUG---------
@@ -130,6 +135,7 @@ DEBUG---------
 .debug .card section.info {
     background-color: greenyellow;
 }
+
 /*
 --------------
 MAIN----------
@@ -139,5 +145,4 @@ MAIN----------
 .card div.photo img {
     width: 100%;
     display: block;
-    background-position: cover;
 }
