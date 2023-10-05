@@ -134,12 +134,12 @@ MAIN----------
 
 .card {
     width: calc(( 100% - 40px ) / 3);
-    position: relative;
 }
 
 .details {
     position: absolute;
-    bottom: 100px;
+    bottom: 40px;
+    left: 0;
     color: white;
 }
 
@@ -149,6 +149,9 @@ MAIN----------
     position: static;
 }
 
+div.photo {
+    position: relative;
+}
 .photo-2 {
     width: 100%;
     display: block;
