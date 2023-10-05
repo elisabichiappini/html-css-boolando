@@ -60,8 +60,7 @@ h3 {
 }
 
 .sale {
-    color: var(--bg-sale);   
-    font-weight: 700;
+    color: var(--bg-sale);
 }
 
 i {
